@@ -51,4 +51,4 @@ Excel (formulas only — no VBA). Built so another analyst can inherit the file 
 
 ## Profile
 
-Sai Siri Bandaru — Financial Analyst | FP&A | forecasting, variance analysis, Excel & Power BI
+Sai Siri Bandaru — Financial Analyst | FP&A | forecasting, variance analysis, Excel
