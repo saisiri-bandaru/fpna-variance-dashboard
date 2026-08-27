@@ -4,7 +4,9 @@ Monthly financial flash for a fictional CPG company (**Northline Consumer Produc
 
 **File to open:** `Northline_FPNA_Variance_Dashboard_FY2026.xlsx`
 
-All numbers are made up. Do not put real employer data in this public repo.
+![Dashboard preview](dashboard-preview.svg)
+
+Preview of the `05_Dashboard` tab. Numbers match the workbook (YTD through July). All figures are fictional.
 
 ## What this shows
 
