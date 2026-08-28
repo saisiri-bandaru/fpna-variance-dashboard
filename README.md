@@ -1,33 +1,42 @@
 # FP&A variance dashboard
 
-Monthly financial flash for a fictional CPG company (**Northline Consumer Products**, FY2026). Built as a portfolio piece for [saisiri-bandaru](https://github.com/saisiri-bandaru).
+Monthly financial flash for a fictional CPG company (**Northline Consumer Products**, FY2026).
 
-**File to open:** `Northline_FPNA_Variance_Dashboard_FY2026.xlsx`
+**Open this file:** [`Northline_FPNA_Variance_Dashboard_FY2026.xlsx`](Northline_FPNA_Variance_Dashboard_FY2026.xlsx)
 
 ![Dashboard preview](dashboard-preview.svg)
 
-Preview of the `05_Dashboard` tab. Numbers match the workbook (YTD through July). All figures are fictional.
+Preview of `05_Dashboard`. Sample close is YTD through July. All figures are fictional.
 
-## What this shows
+## Business question
 
-- Actual vs Budget vs Forecast on revenue, COGS, gross profit, OpEx, and EBITDA
-- YTD and latest-month dollar and percent variances
-- A simple **COGS rate vs volume** split (standard-cost lens)
-- Department view of OpEx
-- One-page dashboard for a standup or ELT pre-read
+Revenue is slightly ahead of plan. Why is EBITDA still short — and is the COGS miss **rate** or **volume**?
 
-## How an FP&A close uses it
+That is the conversation this file is built to start with operations in the first ten minutes of the flash meeting.
 
-1. Set **Close month** on `01_Assumptions` (yellow cell).
-2. Type actuals for that month on `02_P&L_Monthly`. Leave future months blank.
-3. Update forecast only when the reforecast changes.
-4. Read `05_Dashboard`, then write the story from `03_Variance`.
+## What to change in a screen-share
+
+| Driver (yellow / blue) | Tab | What should move |
+| --- | --- | --- |
+| Close month | `01_Assumptions` | Which month is “latest” on the dashboard |
+| Standard COGS % | `01_Assumptions` | Size of the rate vs volume split |
+| Latest-month actuals | `02_P&L_Monthly` | Dollar and percent variances, EBITDA |
+| Forecast rows | `02_P&L_Monthly` | Remaining-year outlook vs annual plan |
+
+**Volume shock to try:** cut July units / revenue ~10% on the actuals tab and keep the standard COGS rate fixed. The COGS bridge should show the miss shifting toward **volume**; rate should stay the residual. If both move together, the split is not isolated.
 
 Blue font + yellow fill = inputs. Black font = formulas.
 
-## Sample read (file is closed through July)
+## Sample read (file closed through July)
 
-YTD revenue runs a little ahead of the annual plan on mid-year volume. The watch-item is **gross margin**: COGS % is above the 60% standard rate, so most of the COGS miss is **rate**, not volume. That is the operations conversation (mix, freight, yield, or a stale standard). OpEx is close to plan; EBITDA follows the margin gap.
+YTD revenue runs a little ahead of the annual plan on mid-year volume. The watch-item is **gross margin**: COGS % is above the 60% standard rate, so most of the COGS miss is **rate**, not volume. That is an operations conversation (mix, freight, yield, or a stale standard). OpEx is close to plan; EBITDA follows the margin gap.
+
+## How a close uses it
+
+1. Set **Close month** on `01_Assumptions`.
+2. Type actuals for that month on `02_P&L_Monthly`. Leave future months blank.
+3. Touch forecast only when the reforecast changes.
+4. Read `05_Dashboard`, then write the story from `03_Variance`.
 
 ## Tabs
 
@@ -43,14 +52,12 @@ YTD revenue runs a little ahead of the annual plan on mid-year volume. The watch
 
 ## Stack
 
-Excel (formulas only — no VBA). Built so another analyst can inherit the file from the data dictionary.
+Excel formulas only — no VBA. Built so another analyst can inherit the file from the data dictionary.
 
-## Not included on purpose
+## Not in this file on purpose
 
 - Live ERP extracts
-- Confidential PNC or other employer data
-- A full driver-based forecast engine (this is the *close flash*, not Hyperion)
+- Confidential employer data
+- A full driver-based forecast engine (this is the *close flash*)
 
-## Profile
-
-Sai Siri Bandaru — Financial Analyst | FP&A | forecasting, variance analysis, Excel
+[Profile](https://github.com/saisiri-bandaru) · [Portfolio](https://saisiri-bandaru.github.io) · [saisiri.bandaru12@gmail.com](mailto:saisiri.bandaru12@gmail.com)
